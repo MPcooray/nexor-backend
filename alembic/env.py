@@ -2,9 +2,11 @@ from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-
+from app.models.department import Department
+from app.models.role_definition import RoleDefinition
+from app.models.location import Location
 from alembic import context
-
+from app.models.employee_profile import EmployeeProfile
 from app.models.tenant import Tenant
 from app.models.user import User
 
